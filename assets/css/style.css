@@ -17,7 +17,7 @@ header {
 
 header h1 {
     display: inline-block;
-    font-size: 48px;
+    font-size: 3vw;
 }
 
 .seo {
@@ -29,7 +29,7 @@ header section {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 1.25vw;
 }
 
 header section ul {
@@ -106,19 +106,20 @@ aside {
 .main-content {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #aac1cf;
     color: #ffffff;
+
 }
 
 .main-content img {
-    max-height: 200px;
+    max-height: 100px;
 }
 
 .main-content h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 2.25vw;
 }
 
 .footer {
@@ -129,5 +130,24 @@ aside {
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 1.25vw;
+}
+
+@media (max-width: 812px) {
+
+    aside {
+        width: 100%;
+        margin-right: 0px;
+    }
+    main {
+        width: 100%;
+        margin-left: 0px;
+    }
+    header section {
+        font-size: 1.75vw;
+        padding-top: 0.8vw;
+    }
+    .main-content h2 {
+        font-size: 1.5vw;
+    }
 }
